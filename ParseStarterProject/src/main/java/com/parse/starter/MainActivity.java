@@ -47,8 +47,6 @@ public class MainActivity extends ActionBarActivity {
           // handle Parse Exception here
         }
       }
-
-     
     });
   }
 
