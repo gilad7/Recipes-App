@@ -32,22 +32,7 @@ public class MainActivity extends ActionBarActivity {
 
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
-//    ParseQuery<ParseObject> query = ParseQuery.getQuery("Recipe");
-    ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Recipe");
 
-    query.findInBackground(new FindCallback<ParseObject>() {
-      @Override
-      public void done(List<ParseObject> recipes, com.parse.ParseException e) {
-        if (e == null) {
-          // your logic here
-          recipes.size();
-
-          Log.i("recipes", String.valueOf(recipes.size()));
-        } else {
-          // handle Parse Exception here
-        }
-      }
-    });
   }
 
   @Override
